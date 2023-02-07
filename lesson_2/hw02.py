@@ -32,7 +32,7 @@ else:
 # Я не понимаю, что вы от меня хотите...
 
 
-zapros_chisel = input("Четные или нечетные?\n").lower()
+zapros_chisel = input("Четные или нечетные? ").lower()
 
 if zapros_chisel == "четные":
     for i in range(99):
@@ -56,7 +56,7 @@ else:
 # * при желании и понимании решите задачу с применением цикла for.
 
 
-celoe_chislo = input("Введите целое число: \n")
+celoe_chislo = input("\n Введите целое число: \n")
 
 max_cifra = 0
 
