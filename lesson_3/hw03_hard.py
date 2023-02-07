@@ -1,3 +1,6 @@
+__author__ = "Егоров Максим Владимирович"
+
+
 # Задание-1: уравнение прямой вида y = kx + b задано в виде строки.
 # Определить координату y точки с заданной координатой x.
 
@@ -110,38 +113,23 @@ else:
 # Вход: 11
 # Выход: 5 3
 
-n = 10
 
-zapros_etazh = 1
+def get_floor(flat_number):
 
-zapros_komnata = 1
+    floor_block = 0
+    floor = 0
+    max_flat = 0
 
-otvet_etazh = 0
+    while max_flat < flat_number:
+        floor_block += 1
+        floor += floor_block
+        max_flat += floor_block ** 2
 
-otvet_komnata = None
+    floor -= (max_flat - flat_number) // floor_block
 
-while n > 0:
+    return floor, floor_block - (max_flat - flat_number) % floor_block
 
-    for current_etazh in range(zapros_etazh):
 
-        otvet_etazh += 1
-
-    for current_room in range(zapros_komnata):
-
-        n -= 1
-
-    if n == 0:
-
-        otvet_komnata = current_komnata + 1
-
-        break
-
-    if n == 0:
-
-        break
-
-zapros_etazh += 1
-
-zapros_komnata += 1
-
-print(otvet_etazh, otvet_komnata)
+if __name__ == '__main__':
+    while True:
+        print(*get_floor(int(input('Введите номер квартиры:\t'))))
