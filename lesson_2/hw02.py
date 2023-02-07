@@ -34,11 +34,11 @@ else:
 
 zapros_chisel = input("Четные или нечетные?\n").lower()
 
-if zapros_chisel == "четные\n":
+if zapros_chisel == "четные":
     for i in range(99):
         if i % 2 == 0:
             print(i, end=" ")
-elif zapros_chisel == "нечетные\n":
+elif zapros_chisel == "нечетные":
     for i in range(99):
         if i % 2 != 0:
             print(i, end=" ")
