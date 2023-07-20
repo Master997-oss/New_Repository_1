@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+fieldset {
+    border: none;
+}
+
+
+.hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.undotted {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1180px;
+    max-height: 550px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    background: #2936a8;
+    color: #e5eeec;
+    padding: 16px 46px;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+
+.header__logo {
+    margin-right: 25px;
+}
+
+.header__logo:hover {
+    opacity: 0.8;
+}
+
+.header__logo:active {
+    opacity: 0.5;
+}
+
+.header__list {
+    display: flex;
+    column-gap: 15px;
+}
+
+.header__list--left {
+    margin-right: auto;
+}
+
+.header__list-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #443d3d;
+}
+
+.header__list-link:hover {
+    color: #9cdac1;
+}
+
+.header__list-link:active {
+    opacity: 0.5;
+    color: #352e2e;
+}
+
+.header__list-link_phone {
+    color: #46247c;
+}
+
+.header__list-link_contact,
+.contact__form-btn {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 11px 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #198358;
+}
+
+/* footer */
+
+.footer {
+    background: #ece79d;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    width: 1180px;
+    background: #abd8c6;
+    padding-top: 15px;
+    padding-left: 0px;
+    margin-top: 0px;
+    position: relative;
+    align-items: center;
+}
+
+
+.footer__contact-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    padding-bottom: 23px;
+}
+
+.footer__contact-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding-bottom: 23px;
+}
+
+.footer__contact-phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 23px;
+    color: #FFFFFF;
+}
+
+.footer__contact-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 11px 40px;
+    max-width: max-content;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+    background: #30c5a5;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    padding: 54px 0;
+}
+
+.footer__social-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-right: auto;
+}
+
+.footer__social-list {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background: rgba(152, 188, 243, 0.9);
+    z-index: 2;
+}
+
+.contact__form {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    margin: auto;
+    max-width: 780px;
+    padding: 50px 100px;
+    background: #EEEEEE;
+    z-index: 10;
+}
+
+.contact__form-wrapper {
+    z-index: 10;
+}
+
+.open {
+    display: block;
+}
+
+.contact__form-wrap {
+    display: flex;
+    column-gap: 20px;
+}
+
+.contact__form-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form-checkbox {
+    position: relative;
+    display: inline-flex;
+    column-gap: 60px;
+    align-items: center;
+}
+
+.contact__form-label {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #185ea0;
+}
+
+.contact__form-input {
+    background: #EEEEEE;
+    border: 2px solid rgba(11, 88, 107, 0.5);
+}
+
+.contact__form-input_text {
+    width: 280px;
+    height: 50px;
+}
+
+.contact__form-input_text::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 20px;
+    color: #f8f3f3;
+}
+
+.contact__form-input_email,
+.contact__form-input_city {
+    width: 580px;
+    height: 50px;
+}
+
+.contact__form-textarea {
+    width: 580px;
+    height: 100px;
+    resize: vertical;     /* ресайз окна textarea только по вертикали, можно поставить none и ресайз не будет */
+}
+
+.btn__close {
+    position: absolute;
+    background-image: url('../img/cross.png');
+    background-repeat: no-repeat;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+}
+

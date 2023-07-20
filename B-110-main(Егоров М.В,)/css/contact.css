@@ -1,0 +1,40 @@
+.contact__title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 97.2%;
+    text-align: center;
+    color: #00559D;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.payment__input {
+    position: absolute;
+    opacity: 0;
+}
+
+.payment__label {
+    margin-right: 61px;
+    margin-left: 20px;
+}
+
+.payment__label::before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/none.png');
+    left: -10px;
+    width: 21px;
+    height: 21px;
+}
+
+.payment__input:checked + .payment__label::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    background-image: url('../img/check.png');
+    width: 21px;
+    height: 21px;
+}

@@ -1,0 +1,239 @@
+.banner {
+    position: relative;
+    background: linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%);
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+.banner__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 104%;
+    letter-spacing: -8px;
+    color: #00559D;
+    padding-top: 143px;
+    padding-bottom: 37px;
+}
+
+.banner__img {
+    position: relative;
+    top: -502px;
+    left: 830px;
+}
+
+.contact__form-radio {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.contact__form-radio--label {
+    padding: 5px;
+    background-color: #092844;
+}
+
+input[type=range]  {
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    overflow: hidden;
+    height: 7px;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 7px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    background: #ffffff;
+    cursor: pointer;
+    width:24px;
+    height: 25px;
+    border: 8px solid #C29974;
+    -webkit-appearance: none;
+    margin-top: -4px;
+    box-shadow: -200px  0 0 200px  #43e5f7;
+
+  }
+
+  input[type=range]::-moz-range-track {
+      height: 7px;
+      background: rgba(255, 255, 255, 0.5);
+  }
+
+
+ input[type=range]::-moz-range-thumb {
+    background: #ecf0f1;
+    cursor: pointer;
+    height: 7px;
+    border-radius:0px;
+    box-shadow: -200px  0px 0px 200px   #43e5f7;
+    padding: 0px;
+    margin: 0px;
+  }
+
+.banner__btn {
+    margin-bottom: 28px;
+    position: absolute;
+}
+
+.services {
+    margin-bottom: 110px;
+}
+
+.services__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00559D;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.services__list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 280px;
+    cursor: pointer;
+}
+
+.services__list-title {
+    max-width: 115px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2C3036;
+}
+
+.services__list-title:hover {
+    text-decoration: underline;
+}
+
+.services__list-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2C3036;
+}
+
+.services__list-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 11px 40px;
+    text-transform: uppercase;
+    width: max-content;
+    color: #FFFFFF;
+    background: #008752;
+}
+
+.services__list-test {
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    opacity: 0;
+}
+
+.services__list-item:hover, .services__list-test:hover {
+    opacity: 1;
+}
+
+.mission {
+    position: relative;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.mission__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin-right: auto;
+}
+
+.mission__list-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100%;
+    color: #005DAB;
+    margin-bottom: 46px;
+}
+
+.mission__list-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+    z-index: +1;
+}
+
+.mission__list-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 11px 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #008752;
+}
+
+.awards {
+    margin-bottom: 80px;
+}
+
+.awards__list {
+    display: flex;
+    align-items: center;
+}
+
+.awards__list-item {
+    margin-right: 45px;
+    width: 540px;
+    
+}
+
+.mission__img {
+    display: block;
+    position: absolute;
+    width: 570px;
+    height: 499px;
+    bottom: 0;
+    right: 0;
+    z-index: +1;
+
+}
+
+.mission::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 580px;
+    height: 508px;
+    background-color: #008752;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
